@@ -1,8 +1,3 @@
-<<<<<<< HEAD
 flask
 tensorflow
-=======
-flask
-tensorflow
->>>>>>> ca4968bb2bb755ffc586f63ec736f7bd04bb0055
 numpy
