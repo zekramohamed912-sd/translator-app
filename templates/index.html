@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,4 +61,68 @@
 </div>
 <p><em>Note: This demo works best with simple sentences. The model has limited accuracy due to training constraints.</em></p>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>English to French Translator</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .result {
+            margin-top: 20px;
+            background: #eef;
+            padding: 15px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>English → French Translator</h1>
+
+    <form method="POST">
+        <textarea name="text" rows="5" placeholder="Enter English sentence...">{{ user_input }}</textarea>
+        <br>
+        <button type="submit">Translate</button>
+    </form>
+
+    {% if translation %}
+    <div class="result">
+        <h3>Translation:</h3>
+        <p>{{ translation }}</p>
+    </div>
+    {% endif %}
+</div>
+<p><em>Note: This demo works best with simple sentences. The model has limited accuracy due to training constraints.</em></p>
+</body>
+>>>>>>> ca4968bb2bb755ffc586f63ec736f7bd04bb0055
 </html>
